@@ -10,6 +10,12 @@
 #include <windows.h>
 #define MAX_ALUNOS 100
 
+
+/* Está Faltando Cadastrar Vários Alunos
+'  Ordenar Alunos Por Nome
+. 
+*/
+
 typedef struct {
     char nome[50];
     char senha[99];
@@ -212,7 +218,7 @@ void editarcadastro(){
             switch (op_e2)
             {
             case 1:
-                system("cls");
+                system("cls" );
                 printf("Seu nome atual é: %s\n",alunos->nome);
                 printf("Digite o novo Nome: ");
                 scanf("%s",alunos->nome);
